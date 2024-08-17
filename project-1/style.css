@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh; /* Use viewport height to cover the screen */
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure content stays within bounds */
+}
+
+.videos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video is behind content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above video */
+    color: rgba(228, 231, 231, 0.8);
+    text-align: center;
+    
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight:bolder;
+    font-style: initial;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(30, 32, 167, 0.8);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
